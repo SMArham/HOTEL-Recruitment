@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conit Recruitment - Premium Hotel Staffing Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/png" href="./images/C.png" sizes="16x16">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional inline styles for enhanced visuals */
+        :root {
+            --primary-color-rgb: 25, 118, 210;
+            --accent-color-rgb: 255, 152, 0;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/num1.avif');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .highlight {
+            color: var(--accent-color);
+            position: relative;
+        }
+
+
+
+        .highlight {
+    color: yellow;
+    position: relative;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+.services-highlights a {
+    text-decoration: none;
+}
+
+.services-highlights a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.highlight {
+    color: var(--accent-color);
+    position: relative;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .btn-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            border: 2px solid var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        .services-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .service-item {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .service-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--primary-color);
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+        
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-item:hover::before {
+            width: 100%;
+            background: linear-gradient(to right, var(--primary-color), rgba(var(--primary-color-rgb), 0.1));
+        }
+        
+        .service-item:hover h3,
+        .service-item:hover p {
+            color: #fff;
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            margin: 0 auto 25px;
+            box-shadow: 0 5px 15px rgba(var(--primary-color-rgb), 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .service-item:hover .service-icon {
+            background-color: white;
+            color: var(--primary-color);
+            transform: scale(1.1) rotate(10deg);
+        }
+        
+        /* */
+        
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .stat-item {
+            padding: 30px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stat-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(var(--primary-color-rgb), 0.3), rgba(var(--accent-color-rgb), 0.3));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .stat-item:hover::before {
+            opacity: 1;
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .stat-item p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #fff;
+            position: relative;
+            z-index: 1;
+            font-weight: 500;
+        }
+        
+        .partners-section {
+            padding: 80px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .partners-logo-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .partner-logo {
+            background-color: white;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .partner-logo::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.7s ease;
+        }
+        
+        .partner-logo:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .partner-logo:hover::before {
+            left: 100%;
+        }
+        
+        .partner-logo img {
+            max-width: 100%;
+            max-height: 80px;
+            filter: grayscale(100%);
+            transition: all 0.3s ease;
+        }
+        
+        .partner-logo:hover img {
+            filter: grayscale(0%);
+        }
+        
+        /* Improved testimonials */
+        .testimonial-item {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .testimonial-content {
+            padding: 40px;
+            background: linear-gradient(135deg, #fff, #f8f9fa);
+            position: relative;
+        }
+        
+        .testimonial-content i {
+            font-size: 32px;
+            color: var(--primary-color);
+            opacity: 0.2;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        
+        .testimonial-content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #444;
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            padding-left: 30px;
+        }
+        
+        .client-info {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+        }
+        
+        .client-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+            border: 3px solid var(--primary-color);
+        }
+        
+        .client-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .client-details h4 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .client-details p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #777;
+            font-style: normal;
+            padding-left: 0;
+        }
+        
+        .testimonial-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        
+        .testimonial-prev, .testimonial-next {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .testimonial-prev:hover, .testimonial-next:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.1);
+        }
+        
+        .testimonial-dots {
+            display: flex;
+            margin: 0 20px;
+        }
+        
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+        }
+        
+        .dot.active {
+            background-color: var(--primary-color);
+            transform: scale(1.2);
+        }
+        
+        @media (max-width: 768px) {
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+            
+            .btn-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Conit<span>Recruitment</span></h1>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <!-- <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            
+            <h1>Where Hospitality <span class="highlight">Meets</span> Opportunity</h1>
+            <p>Connecting exceptional hospitality talent with premium hotels worldwide</p>
+            <div class="btn-container">
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+                <a href="services.html" class="btn btn-secondary">Explore Services</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <a href="#featured-services">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Premium Recruitment Services</h2>
+                <div class="underline"></div>
+                <p class="subtitle">Customized hospitality staffing solutions that deliver excellence</p>
+            </div>
+            <div class="services-highlights">
+                <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Executive Search</h3>
+                    <p>Identifying exceptional leaders who will drive your hospitality business to new heights</p>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Staff Recruitment</h3>
+                    <p>Comprehensive staffing solutions tailored to each department's specific requirements</p>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Training Programs</h3>
+                    <p>Enhancing skill sets and service quality for all levels of hospitality professionals</p>
+                </div>
+                <div class="service-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Consulting</h3>
+                    <p>Strategic workforce solutions that address complex staffing challenges in today's market</p>
+                </div>
+            </div>
+            <div class="text-center" data-aos="fade-up" data-aos-delay="500">
+                <a href="services.html" class="btn btn-outline">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section id="success" class="success-stories">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Success Stories</h2>
+                <div class="underline"></div>
+                <p class="subtitle">Hear what our satisfied clients have to say</p>
+            </div>
+            <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-container">
+                    <div class="testimonial-item active">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Conit Recruitment helped us staff three new luxury properties with exceptional talent in record time. Their expertise in the hospitality sector is unmatched, and their personalized approach made all the difference."</p>
+                            <div class="client-info">
+                                <div class="client-image">
+                                    <img src="images/32.jpg" alt="Client">
+                                </div>
+                                <div class="client-details">
+                                    <h4>Robert Johnson</h4>
+                                    <p>HR Director, Luxury Resort Group</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"The concierge candidates Conit provided have transformed our guest experience and significantly increased our satisfaction ratings. Their attention to cultural fit and service excellence is refreshing in the industry."</p>
+                            <div class="client-info">
+                                <div class="client-image">
+                                    <img src="images/44.jpg" alt="Client">
+                                </div>
+                                <div class="client-details">
+                                    <h4>Emily Chen</h4>
+                                    <p>General Manager, Five-Star Boutique Hotel</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"We've partnered with Conit for five years for consistent, quality housekeeping staff across 12 global locations. Their reliability, quality screening, and ongoing support have been instrumental to maintaining our brand standards."</p>
+                            <div class="client-info">
+                                <div class="client-image">
+                                    <img src="images/86.jpg" alt="Client">
+                                </div>
+                                <div class="client-details">
+                                    <h4>Daniel Martinez</h4>
+                                    <p>Operations Director, International Hotel Chain</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="testimonial-controls">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button> -->
+                    <!-- <div class="testimonial-dots">
+                        <button class="dot active" data-slide="0"></button>
+                        <button class="dot" data-slide="1"></button> -->
+                    <!-- </div>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to find exceptional talent?</h2>
+                <p>Let our experts help you build the perfect hospitality team for your business</p>
+                <a href="contact.html" class="btn btn-light">Contact Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <!-- <section class="stats-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up" style="color: white;">
+                <h2>Our Impact</h2>
+                <div class="underline"></div>
+                <p class="subtitle">The numbers speak for themselves</p>
+            </div>
+            <div class="stats-container">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <span class="stat-number" data-count="500">0</span><span style="font-size: 48px; font-weight: 700; color: var(--accent-color);">+</span>
+                    <p>Premier Hotels Served</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <span class="stat-number" data-count="5000">0</span><span style="font-size: 48px; font-weight: 700; color: var(--accent-color);">+</span>
+                    <p>Successful Placements</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <span class="stat-number" data-count="15">0</span><span style="font-size: 48px; font-weight: 700; color: var(--accent-color);">+</span>
+                    <p>Years of Excellence</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                    <span class="stat-number" data-count="98">0</span><span style="font-size: 48px; font-weight: 700; color: var(--accent-color);">%</span>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Partners Section -->
+    <section class="partners-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our Trusted Partners</h2>
+                <div class="underline"></div>
+                <p class="subtitle">Working with leading names in the global hospitality industry</p>
+            </div>
+            <div class="partners-logo-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="partner-logo">
+                    <img src="./images/download (4).png" alt="Marriott Hotels Logo">
+                </div>
+                <div class="partner-logo">
+                    <img src="./images/download (1).png" alt="Hilton Hotels Logo">
+                </div>
+               
+                <div class="partner-logo">
+                    <img src="./images/download (2).png" alt="Hyatt Hotels Logo">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Conit<span>Recruitment</span></h2>
+                    <p>Where Hospitality Meets Opportunity</p>
+                    <div class="footer-contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> McLean, 7930 Jones Branch Dr, United States</p>
+                        <p><i class="fas fa-phone"></i> (212) 555-7890</p>
+                        <p><i class="fas fa-envelope"></i> contact@conitrecruitment.com</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Conit Recruitment. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+   
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animation
+        AOS.init({
+            offset: 100,
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+
+        // Testimonial slider functionality
+        const testimonialContainer = document.querySelector('.testimonial-container');
+        const testimonialItems = document.querySelectorAll('.testimonial-item');
+        const dots = document.querySelectorAll('.testimonial-dots .dot');
+        const prevBtn = document.querySelector('.testimonial-prev');
+        const nextBtn = document.querySelector('.testimonial-next');
+        
+        let currentSlide = 0;
+        
+        function showSlide(index) {
+            testimonialItems.forEach((item, i) => {
+                item.classList.remove('active');
+                dots[i].classList.remove('active');
+            });
+            
+            testimonialItems[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentSlide = index;
+        }
+        
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showSlide(index);
+            });
+        });
+        
+        prevBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + testimonialItems.length) % testimonialItems.length;
+            showSlide(currentSlide);
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % testimonialItems.length;
+            showSlide(currentSlide);
+        });
+        
+        // Auto-advance testimonials
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % testimonialItems.length;
+            showSlide(currentSlide);
+        }, 7000);
+
+        // Counter animation for stats section
+        const statNumbers = document.querySelectorAll('.stat-number');
+        
+        // Check if element is in viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+        
+        // Animate counter
+        function animateCounter(counter, target) {
+            let current = 0;
+            const increment = target > 100 ? 10 : 1;
+            const duration = 2000;
+            const steps = Math.ceil(duration / 30);
+            const step = Math.ceil(target / steps);
+            
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    clearInterval(timer);
+                    counter.textContent = target;
+                } else {
+                    counter.textContent = current;
+                }
+            }, 30);
+        }
+        
+        // Start counter animation when scrolled into view
+        function checkCounters() {
+            statNumbers.forEach(counter => {
+                if (isInViewport(counter) && !counter.classList.contains('counted')) {
+                    const target = parseInt(counter.dataset.count);
+                    animateCounter(counter, target);
+                    counter.classList.add('counted');
+                }
+            });
+        }
+        
+        // Check counters on scroll
+        window.addEventListener('scroll', checkCounters);
+        checkCounters(); // Check on page load
+
+        // Back to top button functionality
+        const backToTopBtn = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+    <!-- Stable Navigation Script -->
+    <script src="navigation.js"></script>
+</body>
+</html>
