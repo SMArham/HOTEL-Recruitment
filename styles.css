@@ -41,6 +41,18 @@ section {
     margin-bottom: 50px;
 }
 
+.section-intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.section-intro h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+}
 .section-title h2 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -540,7 +552,8 @@ footer {
 
 .footer-bottom {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 20px 0px -12px 20px;
+    margin-bottom: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -871,7 +884,7 @@ footer {
   
   .why-choose-us .section-title .underline {
     width: 60px;
-    height: 4px;
+    height: 5px;
     background-color: var(--primary-color);
     margin: 0 auto 20px auto;
   }
@@ -1730,7 +1743,7 @@ footer {
     background: #fff;
     border-radius: 12px;
     padding: 40px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    box-shadow:  8px 20px rgba(0, 0, 0, 0.05);
     flex: 1 1 45%;
   }
   
@@ -2013,7 +2026,7 @@ footer {
     padding: 2rem;
     border-radius: 10px;
     max-width: 600px;
-    margin: 40px auto;
+    /* margin: 40px auto; */
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
   

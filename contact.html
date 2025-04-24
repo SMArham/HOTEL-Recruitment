@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="icon" type="image/png" href="./images/C.png" sizes="16x16">
-
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         /* Contact Page Specific Styles */
@@ -408,8 +406,8 @@
         }
 
         .contact-info-wrapper {
-            background: linear-gradient(135deg, var(--primary-color) 0%, #1a56a7 100%);
-            color: white;
+            /* background: linear-gradient(135deg, var(--primary-color) 0%, #1a56a7 100%); */
+            color: rgb(0, 0, 0);
         }
 
         .contact-info-header p {
@@ -523,6 +521,31 @@
                 gap: 0;
             }
         }
+
+        @media screen and (max-width: 992px) {
+            .combined-contact-container {
+                grid-template-columns: 1fr !important; /* Change to single column on smaller screens */
+                gap: 40px !important;
+            }
+            
+            .form-wrapper, .contact-info-wrapper {
+                height: auto !important; /* Auto height on mobile */
+            }
+        }
+        
+        @media screen and (max-width: 576px) {
+            .form-row {
+                flex-direction: column !important; /* Stack form fields on very small screens */
+            }
+            
+            .form-wrapper, .contact-info-wrapper {
+                padding: 25px !important; /* Smaller padding on mobile */
+            }
+            
+            .contact-card {
+                padding: 20px !important; /* Smaller padding for cards on mobile */
+            }
+        }
     </style>
 </head>
 <body>
@@ -541,8 +564,7 @@
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Our Services</a></li>
                     <li><a href="contact.html" class="active">Contact Us</a></li>
-                    <!-- <li><a href="terms.html">Terms & Conditions</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li> -->
+                   
                 </ul>
             </nav>
         </div>
@@ -553,51 +575,16 @@
         <div class="banner-content">
             <h1 data-aos="fade-up">Contact Us</h1>
             <div class="underline" data-aos="fade-up" data-aos-delay="100"></div>
-            <p data-aos="fade-up" data-aos-delay="200">We're here to help with your hospitality staffing needs</p>
+            <p data-aos="fade-up" data-aos-delay="200">We’re dedicated to solving your hospitality staffing challenges with personalized recruitment and training solutions. From front desk roles to executive placements, we tailor our expertise to meet your unique operational needs. Count on us for reliable, responsive support that keeps your team and guests thriving.</p>
         </div>
     </section>
 
-    <!-- Contact Details Cards -->
-    <section class="contact-section">
-        <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <h2>Get in Touch</h2>
-                <div class="underline"></div>
-                <p class="subtitle">We're ready to answer your questions and discuss your needs</p>
-            </div>
-            <div class="contact-details-grid" data-aos="fade-up">
-                <div class="contact-card">
-                    <div class="icon">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <h3>Phone</h3>
-                    <p>We're available Monday-Friday, 9am-6pm EST</p>
-                    <p><strong>(212) 555-7890</strong></p>
-                </div>
-                <div class="contact-card">
-                    <div class="icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Email</h3>
-                    <p>We'll respond to your inquiry within 24 hours</p>
-                    <p><strong>contact@conitrecruitment.com</strong></p>
-                </div>
-                <div class="contact-card">
-                    <div class="icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3>Location</h3>
-                    <p>Our headquarters is located in</p>
-                    <p><strong>McLean, 7930 Jones Branch Dr, United States</strong></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form and Info Section -->
+    <!-- Contact Details Cards and Form Section Combined -->
     <section class="contact-form-section">
-            <div class="contact-form-container">
-                <div class="form-wrapper" data-aos="fade-right">
+        <div class="container">
+            <div class="combined-contact-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px;">
+                <!-- Left Side: Contact Form -->
+                <div class="form-wrapper" data-aos="fade-right" style="background-color: #fff; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); padding: 40px; height: 100%;">
                     <h3>Send Us a Message</h3>
                     <p class="form-intro">We're eager to hear from you and discuss your hospitality staffing needs. Complete the form below, and our team will respond within 24 hours.</p>
                     
@@ -647,16 +634,43 @@
                     </div>
                 </div>
                 
-                
-      
+                <!-- Right Side: Get in Touch Cards -->
+                <div class="contact-info-wrapper" data-aos="fade-left" style="display: flex; flex-direction: column; background-color: #fff; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); padding: 40px; height: 100%;">
+                    <div class="section-title">
+                        <h2>Get in Touch</h2>
+                        <div class="underline"></div>
+                        <p class="subtitle">We're ready to answer your questions and discuss your needs</p>
+                    </div>
+                    <div class="contact-details-grid" style="display: flex; flex-direction: column; gap: 20px; flex-grow: 1;">
+                        <div class="contact-card">
+                            <div class="icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3>Phone</h3>
+                            <p>We're available Monday-Friday, 9am-6pm EST</p>
+                            <p><strong>(212) 555-7890</strong></p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p>We'll respond to your inquiry within 24 hours</p>
+                            <p><strong>contact@conitrecruitment.com</strong></p>
+                        </div>
+                        <div class="contact-card">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Location</h3>
+                            <p>Our headquarters is located in</p>
+                            <p><strong>McLean, 7930 Jones Branch Dr, United States</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-
-
-
-
-
-
-
 
     <section class="map-section">
         <div class="google-map" data-aos="zoom-in">
@@ -664,7 +678,9 @@
         </div>
     </section>
 
+    <!-- Global Offices Section -->
    
+
     <!-- Follow Us Section -->
     <section class="follow-section">
         <div class="container">
@@ -675,13 +691,12 @@
             </div>
             
             <div class="social-follow" data-aos="fade-up" data-aos-delay="100">
-                <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.youtube.com" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
             </div>
-            
         </div>
     </section>
 
@@ -757,12 +772,11 @@
                 <div class="footer-social">
                     <h3>Connect With Us</h3>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    
                 </div>
             </div>
             <div class="footer-bottom">
