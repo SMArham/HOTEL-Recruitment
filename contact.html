@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Conit Recruitment</title>
+    <title>Contact Us - Hms5star</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="icon" type="image/png" href="./images/C.png" sizes="16x16">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         /* Contact Page Specific Styles */
@@ -552,18 +554,22 @@
     <!-- Header Section -->
     <header>
         <div class="container">
-            <div class="logo">
-                <h1>Conit<span>Recruitment</span></h1>
-            </div>
+              <div class="logo">
+  <h1>
+    Hms<span>5</span><span>star</span>
+  </h1>
+</div>
+
             <nav>
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
+                   <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Our Services</a></li>
-                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="jobs.html">Jobs</a></li> 
                    
                 </ul>
             </nav>
@@ -579,12 +585,63 @@
         </div>
     </section>
 
+
+    
+    <section class="call-to-action">
+  <!-- <div class="container">
+    <div class="call-action-content" data-aos="fade-up">
+      <a href="https://form.jotform.com/251384989563070" class="btn btn-light">Contact Us Today</a>
+    </div>
+  </div> -->
+
+  <style>
+  /* Contact link styling */
+  .contact-link {
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .contact-link a {
+    display: inline-block;
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Hover effect */
+  .contact-link a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive adjustment */
+  @media (max-width: 600px) {
+    .contact-link a {
+      font-size: 0.875rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+</style>
+
+<div class="container">
+  <!-- Contact form quick link -->
+  <p class="contact-link">
+    Click here to fill the contact form
+  </p>
+
+  <div class="call-action-content" data-aos="fade-up">
+    <a href="https://form.jotform.com/251384989563070" class="btn btn-light">Contact Us Today</a>
+  </div>
+</div>
+
+
+</section>
     <!-- Contact Details Cards and Form Section Combined -->
     <section class="contact-form-section">
         <div class="container">
             <div class="combined-contact-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px;">
                 <!-- Left Side: Contact Form -->
-                <div class="form-wrapper" data-aos="fade-right" style="background-color: #fff; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); padding: 40px; height: 100%;">
+                <!-- <div class="form-wrapper" data-aos="fade-right" style="background-color: #fff; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); padding: 40px; height: 100%;">
                     <h3>Send Us a Message</h3>
                     <p class="form-intro">We're eager to hear from you and discuss your hospitality staffing needs. Complete the form below, and our team will respond within 24 hours.</p>
                     
@@ -630,9 +687,9 @@
                     <div id="formSuccess" class="form-success" style="display: none;">
                         <i class="fas fa-check-circle"></i>
                         <h3>Message Sent Successfully!</h3>
-                        <p>Thank you for contacting Conit Recruitment. Our team will get back to you shortly.</p>
+                        <p>Thank you for contacting Hms5star. Our team will get back to you shortly.</p>
                     </div>
-                </div>
+                </div> -->
                 
                 <!-- Right Side: Get in Touch Cards -->
                 <div class="contact-info-wrapper" data-aos="fade-left" style="display: flex; flex-direction: column; background-color: #fff; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); padding: 40px; height: 100%;">
@@ -656,7 +713,7 @@
                             </div>
                             <h3>Email</h3>
                             <p>We'll respond to your inquiry within 24 hours</p>
-                            <p><strong>contact@conitrecruitment.com</strong></p>
+                            <p><strong>contact@hms5star.co.uk</strong></p>
                         </div>
                         <div class="contact-card">
                             <div class="icon">
@@ -671,6 +728,9 @@
             </div>
         </div>
     </section>
+
+
+
 
     <section class="map-section">
         <div class="google-map" data-aos="zoom-in">
@@ -732,36 +792,33 @@
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content" data-aos="fade-up">
-                <h2>Ready to solve your staffing challenges?</h2>
-                <p>Our recruitment specialists are ready to help you build the perfect hospitality team</p>
-                <button onclick="document.getElementById('contactForm').scrollIntoView({behavior: 'smooth'})" class="btn btn-light">Get Started Now</button>
-            </div>
-        </div>
-    </section>
-
+  
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>Conit<span>Recruitment</span></h2>
-                    <p>Where Hospitality Meets Opportunity</p>
-                    <div class="footer-contact-info">
-                        <p><i class="fas fa-map-marker-alt"></i> 42 Westbourne Grove, Office No 2, London, United Kingdom, W2 5SH</p>
-                        <p><i class="fas fa-phone"></i> 07708501683 </p>
-                        <p><i class="fas fa-envelope"></i> contact@conitrecruitment.com</p>
-                    </div>
-                </div>
+               <div class="footer-logo">
+  <div class="logo">
+    <h2>Hms<span>5star</span></h2>
+  </div>
+  <p>Where Hospitality Meets Opportunity</p>
+  <div class="footer-contact-info">
+    <p><i class="fas fa-map-marker-alt"></i> 42 Westbourne Grove, Office No 2, London, United Kingdom, W2 5SH</p>
+    <p><i class="fas fa-phone"></i> 07708501683</p>
+    <p><i class="fas fa-envelope"></i> contact@hms5star.co.uk</p>
+  </div>
+</div>
+
+
+
                 <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                       <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Our Services</a></li>
+                                    <li><a href="jobs.html">Jobs</a></li>
+
                         <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="terms.html">Terms & Conditions</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
@@ -779,7 +836,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Conit Recruitment. All Rights Reserved.</p>
+                <p>&copy; 2025 Hms5star. All Rights Reserved.</p>
             </div>
         </div>
     </footer>

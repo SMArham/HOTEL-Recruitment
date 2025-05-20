@@ -30,6 +30,7 @@ body {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 20px;
+    
 }
 
 section {
@@ -45,6 +46,47 @@ section {
   text-align: center;
   margin-bottom: 50px;
 }
+
+
+
+
+
+
+
+
+
+
+
+.combined-contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Make the right‐side wrapper span both grid columns */
+.contact-info-wrapper {
+  grid-column: 1 / -1;       /* span from first to last column */
+  max-width: 600px;          /* or whatever width you prefer */
+  margin: 0 auto;            /* center it */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .section-intro h2 {
@@ -2178,4 +2220,183 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: contain; /* or 'cover' depending on your desired effect */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 80px 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.footer-logo h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.footer-logo span {
+  color: var(--primary-color);
+}
+
+.footer-logo p {
+  margin-bottom: 20px;
+}
+
+.footer-contact-info p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact-info p i {
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+.footer-links h3,
+.footer-social h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-links h3::after,
+.footer-social h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-5px);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+@media screen and (max-width: 576px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-links h3::after,
+  .footer-social h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 2. Centering wrapper for the button/link */
+.call-action-content {
+  text-align: center;       /* centers the inline <a> */
+  padding: 20px 0;          /* optional vertical padding */
+}
+
+/* 3. (Optional) if you want the <a> to be a bit wider or styled differently */
+.call-action-content .btn {
+  display: inline-block;    /* ensures margin/padding behave predictably */
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* 4. (Optional) adjust container max-width if needed */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
