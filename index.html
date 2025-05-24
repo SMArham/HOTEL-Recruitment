@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,15 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image/png" href="./images/C.png" sizes="16x16">
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         /* Additional inline styles for enhanced visuals */
         :root {
             --primary-color-rgb: 25, 118, 210;
             --accent-color-rgb: 255, 152, 0;
         }
-        
+
         .hero {
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/num1.avif');
             background-size: cover;
@@ -28,13 +30,13 @@
             text-align: center;
             position: relative;
         }
-        
+
         .hero-content h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
             letter-spacing: 1px;
         }
-        
+
         .hero-content p {
             font-size: 1.5rem;
             margin-bottom: 40px;
@@ -42,22 +44,6 @@
             margin-left: auto;
             margin-right: auto;
         }
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         .highlight {
             color: var(--accent-color);
@@ -67,87 +53,42 @@
 
 
         .highlight {
-    color: yellow;
-    position: relative;
-}
+            color: yellow;
+            position: relative;
+        }
 
-.highlight::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: var(--accent-color);
-}
+        .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
 
-.services-highlights a {
-    text-decoration: none;
-}
+        .services-highlights a {
+            text-decoration: none;
+        }
 
-.services-highlights a {
-    text-decoration: none;
-}
+        .services-highlights a {
+            text-decoration: none;
+        }
 
+        .highlight {
+            color: var(--accent-color);
+            position: relative;
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.highlight {
-    color: var(--accent-color);
-    position: relative;
-}
-
-.highlight::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: var(--accent-color);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
 
         .btn-container {
             display: flex;
@@ -155,7 +96,7 @@
             justify-content: center;
             margin-top: 30px;
         }
-        
+
         .btn {
             padding: 15px 30px;
             font-size: 16px;
@@ -165,36 +106,36 @@
             border-radius: 50px;
             transition: all 0.3s ease;
         }
-        
+
         .btn-primary {
             background-color: var(--primary-color);
             color: white;
             border: 2px solid var(--primary-color);
         }
-        
+
         .btn-primary:hover {
             background-color: transparent;
             color: var(--primary-color);
         }
-        
+
         .btn-secondary {
             background-color: transparent;
             color: white;
             border: 2px solid white;
         }
-        
+
         .btn-secondary:hover {
             background-color: white;
             color: var(--primary-color);
         }
-        
+
         .services-highlights {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
             margin: 50px 0;
         }
-        
+
         .service-item {
             background-color: #fff;
             border-radius: 10px;
@@ -206,7 +147,7 @@
             overflow: hidden;
             z-index: 1;
         }
-        
+
         .service-item::before {
             content: '';
             position: absolute;
@@ -218,22 +159,22 @@
             transition: all 0.3s ease;
             z-index: -1;
         }
-        
+
         .service-item:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
-        
+
         .service-item:hover::before {
             width: 100%;
             background: linear-gradient(to right, var(--primary-color), rgba(var(--primary-color-rgb), 0.1));
         }
-        
+
         .service-item:hover h3,
         .service-item:hover p {
             color: #fff;
         }
-        
+
         .service-icon {
             width: 80px;
             height: 80px;
@@ -248,15 +189,13 @@
             box-shadow: 0 5px 15px rgba(var(--primary-color-rgb), 0.3);
             transition: all 0.3s ease;
         }
-        
+
         .service-item:hover .service-icon {
             background-color: white;
             color: var(--primary-color);
             transform: scale(1.1) rotate(10deg);
         }
-        
-        /* */
-        
+
         .stats-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -264,7 +203,7 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-        
+
         .stat-item {
             padding: 30px;
             border-radius: 8px;
@@ -274,7 +213,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .stat-item::before {
             content: "";
             position: absolute;
@@ -286,15 +225,15 @@
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-        
+
         .stat-item:hover {
             transform: translateY(-10px);
         }
-        
+
         .stat-item:hover::before {
             opacity: 1;
         }
-        
+
         .stat-number {
             font-size: 48px;
             font-weight: 700;
@@ -307,7 +246,7 @@
             position: relative;
             z-index: 1;
         }
-        
+
         .stat-item p {
             font-size: 18px;
             margin-top: 10px;
@@ -316,19 +255,19 @@
             z-index: 1;
             font-weight: 500;
         }
-        
+
         .partners-section {
             padding: 80px 0;
             background-color: #f9f9f9;
         }
-        
+
         .partners-logo-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 30px;
             margin-top: 50px;
         }
-        
+
         .partner-logo {
             background-color: white;
             height: 120px;
@@ -342,7 +281,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .partner-logo::before {
             content: "";
             position: absolute;
@@ -353,40 +292,40 @@
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
             transition: left 0.7s ease;
         }
-        
+
         .partner-logo:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
-        
+
         .partner-logo:hover::before {
             left: 100%;
         }
-        
+
         .partner-logo img {
             max-width: 100%;
             max-height: 80px;
             filter: grayscale(100%);
             transition: all 0.3s ease;
         }
-        
+
         .partner-logo:hover img {
             filter: grayscale(0%);
         }
-        
+
         /* Improved testimonials */
         .testimonial-item {
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             border-radius: 10px;
             overflow: hidden;
         }
-        
+
         .testimonial-content {
             padding: 40px;
             background: linear-gradient(135deg, #fff, #f8f9fa);
             position: relative;
         }
-        
+
         .testimonial-content i {
             font-size: 32px;
             color: var(--primary-color);
@@ -395,7 +334,7 @@
             top: 20px;
             left: 20px;
         }
-        
+
         .testimonial-content p {
             font-size: 18px;
             line-height: 1.8;
@@ -406,13 +345,13 @@
             z-index: 1;
             padding-left: 30px;
         }
-        
+
         .client-info {
             display: flex;
             align-items: center;
             margin-top: 30px;
         }
-        
+
         .client-image {
             width: 60px;
             height: 60px;
@@ -421,20 +360,20 @@
             margin-right: 15px;
             border: 3px solid var(--primary-color);
         }
-        
+
         .client-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        
+
         .client-details h4 {
             margin: 0;
             color: var(--primary-color);
             font-size: 18px;
             font-weight: 600;
         }
-        
+
         .client-details p {
             margin: 5px 0 0;
             font-size: 14px;
@@ -442,15 +381,16 @@
             font-style: normal;
             padding-left: 0;
         }
-        
+
         .testimonial-controls {
             display: flex;
             justify-content: center;
             align-items: center;
             margin-top: 30px;
         }
-        
-        .testimonial-prev, .testimonial-next {
+
+        .testimonial-prev,
+        .testimonial-next {
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -464,17 +404,18 @@
             align-items: center;
             justify-content: center;
         }
-        
-        .testimonial-prev:hover, .testimonial-next:hover {
+
+        .testimonial-prev:hover,
+        .testimonial-next:hover {
             background-color: var(--secondary-color);
             transform: scale(1.1);
         }
-        
+
         .testimonial-dots {
             display: flex;
             margin: 0 20px;
         }
-        
+
         .dot {
             width: 12px;
             height: 12px;
@@ -485,31 +426,31 @@
             transition: all 0.3s ease;
             border: none;
         }
-        
+
         .dot.active {
             background-color: var(--primary-color);
             transform: scale(1.2);
         }
-        
+
         @media (max-width: 768px) {
             .stats-container {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
+
             .hero-content h1 {
                 font-size: 2.5rem;
             }
-            
+
             .hero-content p {
                 font-size: 1.2rem;
             }
-            
+
             .btn-container {
                 flex-direction: column;
                 gap: 15px;
             }
         }
-        
+
         @media (max-width: 480px) {
             .stats-container {
                 grid-template-columns: 1fr;
@@ -517,22 +458,16 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
-            <!-- <div class="logo">
-                <h1>Conit<span>Recruitment</span></h1>
-            </div> -->
-
             <div class="logo">
-  <h1>
-    Hms<span>5</span><span>star</span>
-  </h1>
-</div>
-
-
-
+                <h1>
+                    Hms<span>5</span><span>star</span>
+                </h1>
+            </div>
             <nav>
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
@@ -542,7 +477,7 @@
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Our Services</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="jobs.html">Jobs</a></li> 
+                    <li><a href="jobs.html">Jobs</a></li>
                 </ul>
             </nav>
         </div>
@@ -551,7 +486,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
-            
+
             <h1>Where Hospitality <span class="highlight">Meets</span> Opportunity</h1>
             <p>Connecting exceptional hospitality talent with premium hotels worldwide</p>
             <div class="btn-container">
@@ -581,10 +516,13 @@
                 <h2>What We Do</h2>
                 <div class="underline"></div>
 
-                <p>Hms5star partners with premier hotels worldwide to deliver tailored staffing and executive search solutions that align talent with brand standards.We also provide targeted training programs and strategic consulting to build high-performing hospitality teams, driving guest satisfaction and operational excellence.</p>
+                <p>Hms5star partners with premier hotels worldwide to deliver tailored staffing and executive search
+                    solutions that align talent with brand standards.We also provide targeted training programs and
+                    strategic consulting to build high-performing hospitality teams, driving guest satisfaction and
+                    operational excellence.</p>
             </div><br><br><br><br>
 
-            
+
             <div class="section-title" data-aos="fade-up">
                 <h2>Premium Recruitment Services</h2>
                 <div class="underline"></div>
@@ -639,7 +577,9 @@
                     <div class="testimonial-item active">
                         <div class="testimonial-content">
                             <i class="fas fa-quote-left"></i>
-                            <p>"Hms5star helped us staff three new luxury properties with exceptional talent in record time. Their expertise in the hospitality sector is unmatched, and their personalized approach made all the difference."</p>
+                            <p>"Hms5star helped us staff three new luxury properties with exceptional talent in record
+                                time. Their expertise in the hospitality sector is unmatched, and their personalized
+                                approach made all the difference."</p>
                             <div class="client-info">
                                 <div class="client-image">
                                     <img src="images/32.jpg" alt="Client">
@@ -654,7 +594,9 @@
                     <div class="testimonial-item">
                         <div class="testimonial-content">
                             <i class="fas fa-quote-left"></i>
-                            <p>"The concierge candidates Hms5star provided have transformed our guest experience and significantly increased our satisfaction ratings. Their attention to cultural fit and service excellence is refreshing in the industry."</p>
+                            <p>"The concierge candidates Hms5star provided have transformed our guest experience and
+                                significantly increased our satisfaction ratings. Their attention to cultural fit and
+                                service excellence is refreshing in the industry."</p>
                             <div class="client-info">
                                 <div class="client-image">
                                     <img src="images/44.jpg" alt="Client">
@@ -669,7 +611,9 @@
                     <div class="testimonial-item">
                         <div class="testimonial-content">
                             <i class="fas fa-quote-left"></i>
-                            <p>"We've partnered with Hms5star for five years for consistent, quality housekeeping staff across 12 global locations. Their reliability, quality screening, and ongoing support have been instrumental to maintaining our brand standards."</p>
+                            <p>"We've partnered with Hms5star for five years for consistent, quality housekeeping staff
+                                across 12 global locations. Their reliability, quality screening, and ongoing support
+                                have been instrumental to maintaining our brand standards."</p>
                             <div class="client-info">
                                 <div class="client-image">
                                     <img src="images/86.jpg" alt="Client">
@@ -684,13 +628,13 @@
                 </div>
                 <!-- <div class="testimonial-controls">
                     <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button> -->
-                    <!-- <div class="testimonial-dots">
+                <!-- <div class="testimonial-dots">
                         <button class="dot active" data-slide="0"></button>
                         <button class="dot" data-slide="1"></button> -->
-                    <!-- </div>
+                <!-- </div>
                     <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button> -->
-                </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -757,28 +701,28 @@
             </div> -->
 
             <div class="partners-logo-container" data-aos="fade-up" data-aos-delay="200">
-  <div class="partner-logo">
-    <img src="./images/p1.png" alt="Partner 1 Logo">
-  </div>
-  <div class="partner-logo">
-    <img src="./images/p2.png" alt="Partner 2 Logo">
-  </div>
-  <div class="partner-logo">
-    <img src="./images/p3.png" alt="Partner 3 Logo">
-  </div>
-  <div class="partner-logo">
-    <img src="./images/p4.png" alt="Partner 4 Logo">
-  </div>
-  <div class="partner-logo">
-    <img src="./images/p5.png" alt="Partner 5 Logo">
-  </div>
-  <div class="partner-logo">
-    <img src="./images/p6.png" alt="Partner 6 Logo">
-  </div>
-  <div class="partner-logo">
-    <img src="./images/p7.png" alt="Partner 7 Logo">
-  </div>
-</div>
+                <div class="partner-logo">
+                    <img src="./images/p1.png" alt="Partner 1 Logo">
+                </div>
+                <div class="partner-logo">
+                    <img src="./images/p2.png" alt="Partner 2 Logo">
+                </div>
+                <div class="partner-logo">
+                    <img src="./images/p3.png" alt="Partner 3 Logo">
+                </div>
+                <div class="partner-logo">
+                    <img src="./images/p4.png" alt="Partner 4 Logo">
+                </div>
+                <div class="partner-logo">
+                    <img src="./images/p5.png" alt="Partner 5 Logo">
+                </div>
+                <div class="partner-logo">
+                    <img src="./images/p6.png" alt="Partner 6 Logo">
+                </div>
+                <div class="partner-logo">
+                    <img src="./images/p7.png" alt="Partner 7 Logo">
+                </div>
+            </div>
 
         </div>
     </section>
@@ -787,17 +731,18 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-               <div class="footer-logo">
-  <div class="logo">
-    <h2>Hms<span>5star</span></h2>
-  </div>
-  <p>Where Hospitality Meets Opportunity</p>
-  <div class="footer-contact-info">
-    <p><i class="fas fa-map-marker-alt"></i> 42 Westbourne Grove, Office No 2, London, United Kingdom, W2 5SH</p>
-    <p><i class="fas fa-phone"></i> 07708501683</p>
-    <p><i class="fas fa-envelope"></i> contact@hms5star.co.uk</p>
-  </div>
-</div>
+                <div class="footer-logo">
+                    <div class="logo">
+                        <h2>Hms<span>5star</span></h2>
+                    </div>
+                    <p>Where Hospitality Meets Opportunity</p>
+                    <div class="footer-contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 42 Westbourne Grove, Office No 2, London, United
+                            Kingdom, W2 5SH</p>
+                        <p><i class="fas fa-phone"></i> 07708501683</p>
+                        <p><i class="fas fa-envelope"></i> contact@hms5star.co.uk</p>
+                    </div>
+                </div>
 
 
 
@@ -807,14 +752,14 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Our Services</a></li>
-                                    <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
 
                         <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="terms.html">Terms & Conditions</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-social">
                     <h3>Connect With Us</h3>
                     <div class="social-icons">
@@ -823,7 +768,7 @@
                         <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    
+
                 </div>
             </div>
             <div class="footer-bottom">
@@ -833,7 +778,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-   
+
     <!-- JavaScript -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -846,7 +791,7 @@
         });
 
         // Mobile menu toggle
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
             document.querySelector('.nav-menu').classList.toggle('active');
         });
 
@@ -856,36 +801,36 @@
         const dots = document.querySelectorAll('.testimonial-dots .dot');
         const prevBtn = document.querySelector('.testimonial-prev');
         const nextBtn = document.querySelector('.testimonial-next');
-        
+
         let currentSlide = 0;
-        
+
         function showSlide(index) {
             testimonialItems.forEach((item, i) => {
                 item.classList.remove('active');
                 dots[i].classList.remove('active');
             });
-            
+
             testimonialItems[index].classList.add('active');
             dots[index].classList.add('active');
             currentSlide = index;
         }
-        
+
         dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
                 showSlide(index);
             });
         });
-        
+
         prevBtn.addEventListener('click', () => {
             currentSlide = (currentSlide - 1 + testimonialItems.length) % testimonialItems.length;
             showSlide(currentSlide);
         });
-        
+
         nextBtn.addEventListener('click', () => {
             currentSlide = (currentSlide + 1) % testimonialItems.length;
             showSlide(currentSlide);
         });
-        
+
         // Auto-advance testimonials
         setInterval(() => {
             currentSlide = (currentSlide + 1) % testimonialItems.length;
@@ -894,7 +839,7 @@
 
         // Counter animation for stats section
         const statNumbers = document.querySelectorAll('.stat-number');
-        
+
         // Check if element is in viewport
         function isInViewport(element) {
             const rect = element.getBoundingClientRect();
@@ -905,7 +850,7 @@
                 rect.right <= (window.innerWidth || document.documentElement.clientWidth)
             );
         }
-        
+
         // Animate counter
         function animateCounter(counter, target) {
             let current = 0;
@@ -913,7 +858,7 @@
             const duration = 2000;
             const steps = Math.ceil(duration / 30);
             const step = Math.ceil(target / steps);
-            
+
             const timer = setInterval(() => {
                 current += step;
                 if (current >= target) {
@@ -924,7 +869,7 @@
                 }
             }, 30);
         }
-        
+
         // Start counter animation when scrolled into view
         function checkCounters() {
             statNumbers.forEach(counter => {
@@ -935,14 +880,14 @@
                 }
             });
         }
-        
+
         // Check counters on scroll
         window.addEventListener('scroll', checkCounters);
         checkCounters(); // Check on page load
 
         // Back to top button functionality
         const backToTopBtn = document.querySelector('.back-to-top');
-        
+
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 backToTopBtn.classList.add('show');
@@ -950,7 +895,7 @@
                 backToTopBtn.classList.remove('show');
             }
         });
-        
+
         backToTopBtn.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -959,4 +904,5 @@
     <!-- Stable Navigation Script -->
     <script src="navigation.js"></script>
 </body>
+
 </html>
